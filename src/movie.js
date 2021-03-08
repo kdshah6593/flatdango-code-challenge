@@ -23,8 +23,7 @@ class Movie {
         const theMovie = Movie.findById(currentMovieId)
 
         if (theMovie.ticketsSold === theMovie.capacity) {
-            alert("No more tickets")
-            Movie.newMovieInfo(theMovie)
+            alert("No more tickets");
         } else {
             let inputData = {id: theMovie.id, title: theMovie.title, runtime: theMovie.runtime, poster: theMovie.poster, description: theMovie.filmInfo, showtime: theMovie.showtime, tickets_sold: theMovie.ticketsSold + 1}
     
